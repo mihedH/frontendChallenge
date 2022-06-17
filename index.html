@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Expenses chart component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+<section class="bigContainer">
+  <div class="balance">
+        <div class="balanceLeft">
+            <div class="balanceText"> My balance</div>
+            <div class="balanceNumber">$921.48</div>
+        </div>
+        <div class="balanceRight">
+          <div class="circle empty"></div>
+          <div class="circle full"></div>
+        </div>
+  </div>
+<section class="container">
+<div class="box">
+ <div class="titre">
+  <h3> Spending - Last 7 days</h3>
+ </div>
+
+<div class="ensemble">
+  <div class="pack">
+       <div class="percent" id="n1">$17.45</div>
+        <div class="graph" id="mon"></div>
+      <div class="name" id="m">mon</div>
+  </div>
+  
+  <div class="pack">
+        <div class="percent" id="n2">$34.91</div>
+        <div class="graph" id="tue"></div>
+      <div class="name" id="t">tue</div>
+  </div>
+
+  <div class="pack">
+        <div class="percent" id="n3">$52.36</div>
+        <div class="graph" id="wed"></div>
+      <div class="name" id="w">wed</div>
+  </div>
+
+  <div class="pack">
+        <div class="percent" id="n4">$31.07</div>
+        <div class="graph" id="thu"> </div>
+      <div class="name" id="th">thu</div>
+  </div>
+
+  <div class="pack">
+        <div class="percent" id="n5">$23.39</div>
+        <div class="graph" id="fri"> </div>
+      <div class="name" id="f">fri</div>
+  </div>
+
+  <div class="pack">
+        <div class="percent" id="n6">$43.28</div>
+        <div class="graph" id="sat"> </div>
+      <div class="name" id="sa">sat</div>
+  </div>
+
+  <div class="pack">
+        <div class="percent" id="n0">$25.48</div>
+        <div class="graph" id="sun"> </div>
+      <div class="name" id="su">sun</div>
+  </div>
+
+</div>
+</div>
+<div class="total">
+  <div class="thisMonth">
+    <p class="text">Total this month</p>
+    <p class="num1" > $478.33</p>
+  </div>
+<div class="lastMonth">  
+  <p class="num2" >+2.4%</p>
+  <p class="text" >from last month</p>
+</div>
+</div>
+</section>
+</section>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.instagram.com/mihed_hass/?hl=en">Mihed Hassine</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

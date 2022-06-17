@@ -1,0 +1,230 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+  }
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100vh;
+}
+.balance{
+    background-color: hsl(10, 79%, 65%);
+    width:400px;
+    height: 80px;
+    margin-bottom:20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+}
+.balance .balanceRight{
+    display: flex;
+    margin-right: 25px;
+}
+.balance .balanceRight .circle{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.balance .balanceRight .empty{
+    border: 2px solid hsl(27, 66%, 92%);
+    z-index: 100;
+    transform: translateX(15px);
+}
+.balance .balanceRight .full{
+    background-color:hsl(25, 47%, 15%) ;
+}
+.balance .balanceLeft .balanceText{
+    color: hsl(27, 66%, 92%);
+    font-weight: 400;
+    font-size: 12px;
+    margin: 0px 23px 0px;
+}
+.balance .balanceLeft .balanceNumber{
+    color: hsl(27, 66%, 92%);
+    font-weight: 600;
+    margin: 6px 0px 0px 25px;
+    font-size: 20px;
+}
+.bigContainer{
+    background-color: hsl(27, 66%, 92%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    height: 80%;
+    position: relative;
+}
+.bigContainer .container{
+    background-color: hsl(33, 100%, 98%);
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 15px;
+}
+.bigContainer .container .ensemble{
+    display: flex;
+    justify-content: space-between;
+  padding-bottom: 35px;
+  height: 180px;
+  margin-left:37px;
+  padding-right: 35px;
+  width: 80%;
+  border-bottom: 1px solid hsl(28, 10%, 53%);
+}
+
+.bigContainer .container .ensemble .pack .graph{
+    background-color:hsl(10, 79%, 65%) ;
+    border-radius: 3px;
+    width: 35px;
+    position: absolute;
+    bottom: 140px;
+}
+.bigContainer .container .ensemble .pack .graph:hover{
+    opacity:70%;
+}
+.bigContainer .container .ensemble .pack .name{
+    position: absolute;
+    bottom:122px;
+    font-size: 13px;
+    font-weight: 400;
+    color: hsl(28, 10%, 53%);
+    text-align: center;
+   
+}
+.bigContainer .container .ensemble .pack .percent{
+    font-size: 11px;
+    font-weight: 400;
+    background-color: hsl(25, 47%, 15%);
+    color: hsl(33, 100%, 98%);
+    padding: 3px 2px;
+    border-radius: 3px;
+    position: absolute;
+    top: 45px;
+    display: none;
+}
+.bigContainer .container .ensemble .pack #n1{
+    top: 105px;
+}
+.bigContainer .container .ensemble .pack #n2{
+    top: 75px;
+}
+.bigContainer .container .ensemble .pack #n4{
+    top: 80px;
+}
+.bigContainer .container .ensemble .pack #n5{
+    top: 95px;
+}
+.bigContainer .container .ensemble .pack #n6{
+    top: 60px;
+}
+.bigContainer .container .ensemble .pack #n0{
+    top: 85px;
+}
+/* giving height to each graphic */
+.bigContainer .container .ensemble .pack #mon{
+    height: 30px;
+}
+.bigContainer .container .ensemble .pack #tue{
+    height: 60px;
+}
+.bigContainer .container .ensemble .pack #wed{
+    height: 90px;
+}
+.bigContainer .container .ensemble .pack #thu{
+    height: 55px;
+}
+.bigContainer .container .ensemble .pack #fri{
+    height: 40px;
+}
+.bigContainer .container .ensemble .pack #sat{
+    height: 75px;
+}
+.bigContainer .container .ensemble .pack #sun{
+    height: 50px;
+}
+ /* centering days' names */
+.bigContainer .container .ensemble .pack #m{
+padding-left: 5px;
+}
+.bigContainer .container .ensemble .pack #t{
+padding-left: 10px;
+ }
+.bigContainer .container .ensemble .pack #w{
+ padding-left: 7px;
+}
+.bigContainer .container .ensemble .pack #th{
+padding-left:10px;
+}
+.bigContainer .container .ensemble .pack #f{
+padding-left: 15px;
+}
+.bigContainer .container .ensemble .pack #sa{
+ padding-left:10px;
+}
+.bigContainer .container .ensemble .pack #su{
+padding-left:6px;
+}
+    .titre{
+        margin-top: 15px;
+        margin-left: 30px;
+        font-weight: 700;
+        color: hsl(25, 47%, 15%);
+    }
+    .thisMonth{
+        display: flex;
+        flex-direction: column;
+    }
+    .lastMonth{
+        display: flex;
+        flex-direction: column;
+        margin-top: 17px;
+    }
+    .total{
+        display: flex;
+        justify-content: space-around;
+        margin-top:10px;
+    }
+    .text{
+        font-size: 13px;
+        font-weight: 400;
+        color: hsl(28, 10%, 53%);
+    }
+    .num1{
+        color: hsl(25, 47%, 15%);
+        font-weight: 700;
+        font-size: 30px;
+    }
+    .num2{
+        color: hsl(25, 47%, 15%); 
+        font-weight:700;
+        font-size: 12px;
+        text-align: right;
+    }
+.attribution{
+    position: absolute;
+    right: 3px;
+    bottom: 5px;
+}
+@media all and (max-width:375px){
+    body{
+        background-color: hsl(27, 66%, 92%);
+    }
+    .bigContainer{
+        width: 90%;
+    }
+    .bigContainer .container{
+        width: 100%;
+    }
+    .bigContainer  .balance{
+        width: 100%;
+    }
+}
