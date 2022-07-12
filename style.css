@@ -87,6 +87,7 @@ body{
     width: 35px;
     position: absolute;
     bottom: 140px;
+    cursor : pointer;
 }
 .bigContainer .container .ensemble .pack .graph:hover{
     opacity:70%;
